@@ -1,0 +1,711 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Google font*/
+section h1{ 
+    font-family: 'Kreon', serif !important;
+}
+
+h3{
+    font-family: 'rajdhani',sans-serif;
+}
+
+p.lead{
+    font-family: 'rajdhani', serif !important;
+}
+/* Google font*/
+
+
+/*-- Button back to top*/
+#top-btn {
+    display: inline-block;
+    background-color: rgb(74, 228, 212);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #top-btn::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  } 
+  #top-btn:hover {
+    cursor: pointer;
+    background-color: #333;
+    text-decoration: none;
+
+  }
+  #top-btn:active {
+    background-color: #555;
+  }
+  #top-btn.show {
+    opacity: 1;
+    visibility: visible;
+  }
+/*-- Button back to top*/
+
+
+
+/* **********************  StyleSheet override Bootstrap Class  *************************/
+
+/*   */
+/* navbar */
+.navbar{
+    min-height: 50px;
+}
+.navbar-toggle {
+    margin-top: 7px;
+}
+
+/* navbar active Link*/
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover{
+    background-color: turquoise;
+}
+
+/* navbar active Link a */
+.navbar-inverse .navbar-nav>li>a {
+    color: #bff8ff;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-family: 'Rajdhani',sans-serif !important;
+    font-size: 16px;
+}
+.navbar-inverse .navbar-nav>li>a:focus, 
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #ffffff;
+    background-color: black;
+}
+
+
+/* nav menu*/
+
+.navbar-inverse{
+    background-color: black;
+}
+.navbar-inverse .navbar-brand{
+    font-size: 50px;
+    line-height: 15px;
+    color: white;
+    font-family: forte;
+}
+.navbar-inverse .navbar-brand span{
+    color: turquoise;
+}
+
+/* End Brand Name*/
+
+/* dropdown-menu */ 
+.dropdown-menu {
+    background-color: #030303;
+    border-radius: 4px; 
+    min-width: 200px; 
+}
+
+.navbar-right .dropdown-menu {
+    right: auto;
+    left: 0;
+}
+
+.navbar-brand>img {
+    display: block;
+    height: 60px;
+    width: 260px;
+    margin-top: -18px;
+}
+
+.dropdown-menu>li>a:focus,
+ .dropdown-menu>li>a:hover {
+    color: #ffffff; 
+    background-color: turquoise;
+    padding-left: 30px;
+}
+
+.dropdown-menu>li>a { 
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'rajdhani', serif;
+    transition: padding 0.5s ease;
+    -webkit-transition: padding 0.5s ease;
+    -o-transition: padding 0.5s ease;
+    -moz-transition: padding 0.5s ease;
+}
+/* End dropdown-menu */
+
+/* Start caroussel */
+
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img,
+.img-responsive, .thumbnail a>img,
+.thumbnail>img
+{
+    height: 600px;
+}
+.carousel-caption
+{
+    font-family: rajdhani, 'sans serif';
+    background-color: #ffffff2b;
+    border-radius: 4px;
+    padding: 15px 25px;
+    bottom: 30%;
+    top: 30%;   
+}
+.carousel-caption h1{
+    font-family: 'rajdhani', serif;
+}
+.carousel-caption p
+{
+    font-size: 16px;
+    font-weight: 400;
+}
+.carousel-indicators li{
+    height: 12px;
+    width: 12px;
+}
+.carousel-indicators .active{
+    background-color: #bff8ff;
+}
+
+li.square{
+    height: 4px;
+    width: 50px;
+    border-radius: 0px;
+    background-color: white;
+    border : 0px
+}
+li.square.active{
+    height: 4px;
+    width: 50px;
+    border-radius: 0px;
+    background-color: turquoise;
+    margin : 1px;
+}
+
+
+/* End caroussel */
+
+/* start About Section*/
+
+/* commun between sections : about, features,testimonials, prices, team, subscribe, statics, skills, contact us, clients   */
+.about h1,.features h1,.services h1, .testimonials h1, .prices h1,.team h1,.subscribe h1,.statics h1,.skills h1,.contact-us h1, .clients h1    {
+    /*font-weight: bold;*/
+    padding:40px 0px 7px;
+    font-size: 45px;   
+}
+.about p span {
+    font-weight: bold;
+}
+.about {
+    font-family: kreon , serif;
+    font-size: 17px;
+    font-weight: 300;
+    margin:40px 0px;
+    min-height: 400px;
+}
+/* start About Section*/
+
+/* start features Section*/
+.features {
+    background-color: #40e0d085;
+    padding-bottom: 18px;
+}
+.glyphicon{
+    font-size: 37px;
+}
+.feature{
+    margin-top: 10px;
+}
+.feature h3{
+    font-family: kreon , serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.feature p {
+    padding: 10px 25px;
+    font-family: 'rajdhani', serif;
+    font-size: 18px;
+}
+/* End features Section*/
+/* Start Services Section*/
+.services {
+    background-color: white;
+    min-height: 300px;
+}
+
+.service{
+    margin-bottom: 100px;
+    position: relative;
+}
+.img-service{
+    height: 340px;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+   
+}
+.img-service:hover ~ .more {
+   height: 100%;
+}
+.more:hover {
+    height: 100%;
+ }
+ 
+.more{
+    position: absolute;
+    top: 0%;  
+    height: 0%;
+    width: 100%;
+    background-color: #0000007a;
+    border-radius: 4px;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+}
+.more a{
+    font-family: 'Kreon', serif !important;
+    font-size: 30px;
+    opacity: 0;
+    height: 380px;
+    padding: 125px 0;
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: opacity .7s ease;
+}
+.more a:hover{
+    opacity: 1;
+}
+/* End Services Section*/
+
+/* Start Testimonials carousel*/
+
+.testimonials  .carousel-inner{
+    min-height: 190px; 
+} 
+ 
+.testimonials  .carousel-caption{
+    background: none; 
+    color: black;
+}
+.testimonials .carousel-caption h1{
+    padding-top: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.testimonials .carousel-indicators{
+    position: static;
+    width: 100%;
+    margin-left: auto;
+}
+.testimonials .carousel-indicators li {
+    text-indent: 0;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #40e0d096;
+    margin: 3px;
+    overflow: hidden;
+    opacity: 0.5;
+}
+.testimonials .carousel-indicators li img 
+{
+    max-width: 100%;
+    margin-left: auto;
+}
+.testimonials span{
+    font-weight: bold;
+    font-size: 23px;
+}
+.testimonials .carousel-indicators li.active
+{
+    opacity: 1;
+}
+
+/* End Testimonials carousel*/
+
+/* Start Price Section */
+.prices{
+    background-color: black;
+}
+.prices h1{
+    color: white;
+}
+.price-box{
+    width:90%;
+    background-color: #ecb40a;
+    line-height: 2em;
+    font-size: 18px;
+    border-radius: 2px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    color: black;
+    font-family: 'rajdhani', sans-serif;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+
+}
+.price-box li{
+    font-weight: 600;
+}
+.price-box:hover{
+    background-color: #ffc107;
+    box-shadow: 2px 3px 6px 1px rgb(255, 255, 255);
+}
+
+.price-box h3 ,.price-box p{
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 15px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.prices span{
+    font-size: 16px;
+}
+
+/* End Price Section */
+
+/* Start Team Section */
+.team{
+    background: url("https://imgur.com/DD0DlEz.jpg") no-repeat center center fixed;
+    background-size:cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    color: whitesmoke;
+
+}
+.pro img{
+    height: 150px;
+    width: 150px;
+    border: 2px solid #313128; 
+    box-shadow: 0px 0px 14px 8px #00000085;
+}
+.team .row{
+    margin-top: 30px;
+}
+.mask{
+    background-color: #0000008a;
+    min-height: 500px;
+}
+.team .pro{
+    padding-top: 15px;
+    text-shadow: 4px 5px 4px rgb(0, 0, 0);
+    margin-bottom: 15px;
+}
+.pro h3{
+    font-weight: bold;
+}
+
+.s-media a{
+    color:turquoise;
+    margin-bottom: 6px;
+}
+.pro p{
+    font-size: 15px;
+    font-weight: 500;
+}
+/* End Team Section */
+
+/*Start subscribe section */
+.subscribe .form-control,.btn-info{
+    margin-right: -5px;
+    border-radius: 0px;
+}
+.subscribe{
+    color: black;
+    background-color: #40e0d038;
+}
+.subscribe p{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    margin-bottom: 15px;    
+}
+.subscribe .form-inline{
+    font-family: 'rajdhani',serif;
+    padding: 15px 0px 65px 0px;
+}
+.form-inline .form-control{
+    width: 350px;
+}
+/*End subscribe section */
+
+/*start statistic section */
+.statics{
+    background: url("https://imgur.com/RBNnRW4.jpg") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    color: white;
+    min-height: 350px; 
+} 
+.statics .mask{
+    min-height: 350px;
+}
+.statics p{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'rajdhani' , 'serif';
+}
+.statics h3{
+    font-size: 4em;
+    font-family:  kreon, serif;
+}
+.statics .stat{ 
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+.statics .stat:hover{ 
+    color: turquoise;
+}
+/*End statistic section */
+
+/*Start contact us section */
+.contact-us{
+    background-color: black;
+    min-height: 450px;
+    color: white;
+}
+.contact-us textarea.form-control{
+    height: 83px;
+}
+.contact-us .btn.btn-primary,.form-control{
+    border-radius: 2px;
+}
+.contact-us .btn.btn-primary{ width: 100%;}
+
+.contact-us p{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    margin-bottom: 15px; 
+}
+.contact-us form{
+    font-family: 'rajdhani', serif;
+}
+/*End contact us section */
+
+/*Start clients section */
+
+.clients .carousel-indicators {
+    position: static;
+    width: 100%;
+    margin-left: auto;
+    margin: 50px 0px 60px 0px;;
+}
+.clients .carousel-indicators li {
+    text-indent: 0;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 3px;
+    overflow: hidden;
+    margin-right: 5px;
+    border:5px solid white;
+    transition: border 0.2s ease-in-out;
+}
+.clients .carousel-indicators li:hover {
+    border:1px solid white;
+}
+.clients .carousel-indicators li img 
+{
+    max-width: 100%;
+    margin-left: auto;
+}
+/*End clients section */
+
+/*Start footer section */
+.footer{
+    min-height: 320px;
+    background-color: black;
+    color: white;
+}
+
+.footer-box{
+    margin-bottom: 30px;
+}
+#f_brand{
+    font-size: 35px;
+    line-height: 60px;
+    color: white;
+    font-family: forte,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer h3 span{color: turquoise;}
+
+#footer_brand{
+    font-size: 12px;
+    color: white;
+    font-family: 'kreon' , serif;
+}
+.footer li{
+    padding-top: 5px; 
+    font-family: 'kreon' , serif;
+    font-size: 15px;
+
+}
+
+.footer a{
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer a:hover{
+    color: turquoise;
+    text-decoration:none;
+}
+.footer a img{
+    width: 130px;
+}
+.footer a{
+    padding-right: 7px;
+}
+.footer .s-media{
+    margin-top: 15px;
+}
+.footer p {
+    padding-top: 7px; 
+    font-size: 13px;
+    font-weight:500; 
+}
+.footer p span{
+    color:turquoise;
+}
+
+/*End footer section */
+
+
+/* Media Query Personalized */
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+@media (min-width:0) and (max-width: 575px){
+    .carousel-control span.glyphicon{
+        font-size: 25px;
+        top: 55%
+    }
+    .carousel-inner{
+        max-height: 300px;
+    }
+    .carousel-caption{
+        padding: 1px;
+        top:10%;
+        bottom: auto;
+    }
+    .carousel-caption h1 {
+        font-size: x-large;
+    }
+    .price-box{
+        margin: 0 auto 20px;
+        padding: 0 0 10px 0;
+        width: 280px;
+    }
+    .form-inline .form-control{
+        width: 60%;
+        margin: 0 auto 10px;
+    }
+
+    .footer .list-unstyled{
+        text-align: center;
+    }
+
+    .img-service {
+        height: 300px;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width : 767px) {  
+    .form-inline .form-control{
+        width: 60%;
+        margin: 0 auto 10px;
+    }
+    .footer .list-unstyled{
+        text-align: center;
+    }
+
+    .price-box{
+        width: 280px;
+        margin: 0 auto 30px;
+    }
+    
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width: 991px) {  
+    .footer .list-unstyled{
+        text-align: center;
+    }
+    .navbar-inverse .container{
+        width: 755px;
+    }
+ 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
+
+
+/* Media Query Personalized */ 
+
