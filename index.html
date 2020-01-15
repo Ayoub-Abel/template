@@ -7,7 +7,7 @@
     <!-- meta compatible view with mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap Tutorial</title>
+    <title>Green Tech</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/fontawesome.min.css" rel="stylesheet">
@@ -44,16 +44,16 @@
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
               <li><a href="#">ABOUT</a></li>
-              <li><a href="#">COMPANY</a></li>
+              <li><a href="#">FAQ</a></li>
               
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">DeskTop</a></li>
-                  <li><a href="#">Web Design</a></li>
-                  <li><a href="#">Web Hosting</a></li>
+                  <li><a href="#">Web Hosting</a></li> 
                   <li role="separator" class="divider"></li>
-                  <li><a href="#">Programming</a></li>   
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Web Developpement</a></li>  
                 </ul>
               </li>
               <li><a href="#contact">CONTACT US</a></li>
@@ -67,7 +67,7 @@
       <!--End navBar-->
 
       <!-- ** Caroussel **-->
-      <div id="myslider" class="carousel slide" data-ride="carousel">
+      <div id="myslider" class="hidden-xs carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators hidden-xs ">
           <li data-target="#myslider" data-slide-to="0" class="square active"></li>
@@ -77,24 +77,24 @@
         </ol>
       
         <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner " role="listbox">
           <div class="item active">
-            <img class="" src="https://imgur.com/ZMRb4Oq.jpg" height="800" alt="...">
+            <img class="img-responsive" src="images/slide1.jpg"  alt="...">
             <div class="carousel-caption">
               <h1>DeskTop</h1>
               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
             </div>
           </div>
           <div class="item">
-            <img class="" src="https://imgur.com/zD6M2Ba.jpg" alt="">
+            <img class="" src="images/slide2.jpg" alt="">
             <div class="carousel-caption">
-              <h1>Web Design</h1>
+              <h1>Web Hosting</h1>
               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
            
             </div>
           </div>
           <div class="item">
-            <img class="" src="https://imgur.com/LNkhgo2.jpg" alt="">
+            <img class="" src="images/slide3.jpg" alt="">
             <div class="carousel-caption">
               <h1>Programming</h1>
               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
@@ -102,9 +102,9 @@
             </div>
           </div>
           <div class="item ">
-            <img class="" src="https://imgur.com/mthguIG.jpg" alt="">
+            <img class="" src="images/slide4.jpg" alt="">
             <div class="carousel-caption item-4">
-              <h1>Web Hosting</h1>
+              <h1>Web Design</h1>
               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
            
             </div>
@@ -179,37 +179,47 @@
         <div class="container text-center">
           <h1>Our services</h1>
           <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0 ">
+            <div class=" col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
               <div class="service">
-                <img id="s1" class="img-service img-responsive" src="https://imgur.com/zD6M2Ba.jpg.jpg" alt="">  
+                <img id="s1" class="img-service img-responsive" src="images/s1.jpg" alt="">  
+                  <div class="more">
+                    <a href="#"><span class="glyphicon glyphicon-search"></span>
+                    <br>Desktop</a>
+                  </div>
+               </div>
+            </div>
+            <div class=" col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
+              <div class="service">
+                <img id="s2" class="img-service img-responsive" src="images/s2.jpg" alt="">  
                   <div class="more">
                     <a href="#"><span class="glyphicon glyphicon-search"></span>
                     <br>Web Hosting</a>
                   </div>
                </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0 ">
+            <div class=" col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
               <div class="service">
-                <img id="s2" class="img-service img-responsive" src="images/service-img3.jpg" alt="">  
+                <img id="s3" class="img-service img-responsive" src="images/service-img3.jpg" alt="">  
                   <div class="more">
                     <a href="#"><span class="glyphicon glyphicon-search"></span>
                   <br> Web Design</a>
                   </div>
                </div>
             </div> 
-            <div class=" col-lg-4 col-md-6 col-sm-6 col-xs-8  col-xs-offset-2  col-lg-offset-0 col-sm-offset-3">
+            <div class="  col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
               <div class="service">
-                <img id="s3" class="img-service img-responsive" src="images/team1.jpg" alt="">  
+                <img id="s4" class="img-service img-responsive" src="images/team1.jpg" alt="">  
                   <div class="more">
                     <a href="#"><span class="glyphicon glyphicon-search"></span>
-                    <br>Programming</a>
+                    <br>Web developpement</a>
                   </div>
                </div>
             </div>
           </div>
+          <hr>
         </div>
       </section>
-      <hr>
+      
       <!-- End Services Section-->
       <!-- Start testimonials Section -->
       <section class="testimonials">
@@ -276,6 +286,7 @@
             <div class="col-md-3 col-sm-6 col-xs-12">
              <div class="price-box">
               <h3>Free Hosting</h3>
+              <hr>
               <p>$ 0/month</p>
               <ul class="list-unstyled">
                 <li>Storage space : 1GB</li>
@@ -289,6 +300,7 @@
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="price-box">
                <h3>Standard Hosting</h3>
+               <hr>
                <p>$ 1.9/month</p>
                <ul class="list-unstyled">
                  <li>Storage space : 10GB</li>
@@ -302,6 +314,7 @@
              <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="price-box">
                <h3>Premium Hosting</h3>
+               <hr>
                <p>$ 10/month</p>
                <ul class="list-unstyled">
                  <li>Storage space : 30GB</li>
@@ -315,6 +328,7 @@
              <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="price-box">
                <h3>Entreprise Hosting</h3>
+               <hr>
                <p>$ 30/month</p>
                <ul class="list-unstyled">
                  <li>Storage space : 2TB</li>
@@ -553,7 +567,7 @@
               </div>
             </div>
             <div class="col-md-12">
-              <p class="lead">Copyright &copy; 2020 <span>ABELDI Ayoub</span></p>
+              <p class="lead">Copyright &copy; 2020 <span>GreenTech Solutions.</span></p>
             </div>
           </div>
         </div>
@@ -567,6 +581,4 @@
     <script src="js/plugins.js"></script>
   </body>
 </html>
-
-
-
+ 

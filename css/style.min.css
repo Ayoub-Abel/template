@@ -16,6 +16,11 @@ p.lead{
 }
 /* Google font*/
 
+/* */
+
+hr{
+    border-top:1px solid #525252
+}
 
 /*-- Button back to top*/
 #top-btn {
@@ -74,7 +79,7 @@ p.lead{
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus, 
 .navbar-inverse .navbar-nav>.active>a:hover{
-    background-color: turquoise;
+    background-color: #40e0d036;
 }
 
 /* navbar active Link a */
@@ -153,7 +158,7 @@ p.lead{
 .img-responsive, .thumbnail a>img,
 .thumbnail>img
 {
-    height: 600px;
+    height: 450px;
 }
 .carousel-caption
 {
@@ -241,17 +246,17 @@ li.square.active{
 }
 /* End features Section*/
 /* Start Services Section*/
-.services {
-    background-color: white;
-    min-height: 300px;
-}
-
 .service{
+    margin: 0 auto;
+    margin-top: 20px;
     margin-bottom: 100px;
     position: relative;
+    border-radius: 4px;
+    box-shadow: 0px 0px 7px 2px;
+    width : 275px
 }
 .img-service{
-    height: 340px;
+    height: 300px;
     border-radius: 4px;
     transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
@@ -297,7 +302,7 @@ li.square.active{
 /* Start Testimonials carousel*/
 
 .testimonials  .carousel-inner{
-    min-height: 190px; 
+    min-height: 200px; 
 } 
  
 .testimonials  .carousel-caption{
@@ -349,7 +354,7 @@ li.square.active{
     color: white;
 }
 .price-box{
-    width:90%;
+    width:230px;
     background-color: #ecb40a;
     line-height: 2em;
     font-size: 18px;
@@ -358,10 +363,10 @@ li.square.active{
     padding-bottom: 10px;
     color: black;
     font-family: 'rajdhani', sans-serif;
-    transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 
 }
 .price-box li{
@@ -369,7 +374,7 @@ li.square.active{
 }
 .price-box:hover{
     background-color: #ffc107;
-    box-shadow: 2px 3px 6px 1px rgb(255, 255, 255);
+    box-shadow: 0 0 6px 1px rgb(255, 255, 255);
 }
 
 .price-box h3 ,.price-box p{
@@ -605,41 +610,15 @@ li.square.active{
 /* Media Query Personalized */
 
 
-/*
-####################################################
-M E D I A  Q U E R I E S
-####################################################
-*/
-
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Bootstrap 4 breakpoints
-*/
-
 /* 
 Extra small devices (portrait phones, less than 576px) 
 No media query since this is the default in Bootstrap because it is "mobile first"
 */
-@media (min-width:0) and (max-width: 575px){
-    .carousel-control span.glyphicon{
-        font-size: 25px;
-        top: 55%
-    }
-    .carousel-inner{
-        max-height: 300px;
-    }
-    .carousel-caption{
-        padding: 1px;
-        top:10%;
-        bottom: auto;
-    }
-    .carousel-caption h1 {
-        font-size: x-large;
-    }
+@media (max-width: 575px){
     .price-box{
         margin: 0 auto 20px;
         padding: 0 0 10px 0;
-        width: 280px;
+        width: 230px;
     }
     .form-inline .form-control{
         width: 60%;
@@ -667,10 +646,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
     .price-box{
-        width: 280px;
+        width: 230px;
         margin: 0 auto 30px;
     }
-    
+ 
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -681,11 +660,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .navbar-inverse .container{
         width: 755px;
     }
- 
+
+    .price-box{
+        width: 230px;
+        margin: 0 auto 30px;
+    }  
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) and (min-width: 1199px) { 
     
 }
 

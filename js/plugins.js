@@ -1,7 +1,7 @@
 /* Setting Interval time loop of images */
 $(document).ready(function(){
     $('.carousel').carousel({
-        interval:4000
+        interval:5000
     });
 });
 
@@ -24,3 +24,4 @@ btn.on('click', function(e) {
  
 
 /* event */
+
