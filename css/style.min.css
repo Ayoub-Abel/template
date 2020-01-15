@@ -558,10 +558,18 @@ li.square.active{
 .footer-box{
     margin-bottom: 30px;
 }
+#f_brand{
+    font-size: 35px;
+    line-height: 60px;
+    color: white;
+    font-family: forte,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer h3 span{color: turquoise;}
 
-#brand-img img{
-    height: 60px;
-    width: 230px;
+#footer_brand{
+    font-size: 12px;
+    color: white;
+    font-family: 'kreon' , serif;
 }
 .footer li{
     padding-top: 5px; 
