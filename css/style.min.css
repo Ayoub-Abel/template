@@ -659,28 +659,22 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }  
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (min-width: 1199px) { 
-    
-}
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-    
+@media (min-width: 1436px) { 
+    #myslider{
+        width: 70% !important;
+        margin: 0 auto !important;
+    }
+}
+/* Large devices (desktops 4k, 2000px and up) */
+@media (min-width: 2000px) { 
+    #myslider{
+        width: 50% !important;
+    }
 }
 
 
 
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
-Custom media queries
-*/
-
-/* Set width to make card deck cards 100% width */
-@media (max-width: 950px) { 
-
-}
-
-
-/* Media Query Personalized */ 
 
