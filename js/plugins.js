@@ -24,10 +24,10 @@ btn.on('click', function(e) {
  
 
 /* event */
-
+/*
 window.onscroll = () =>{
   console.log(window.scrollY);}
-/*
+
 window.onscroll = () =>{
   console.log(window.screenX+ window.innerWidth);
 }*/
