@@ -659,19 +659,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }  
 }
 
-/* Large devices (desktops 4k, 1436px and up) */
+/* Large devices (desktops 4K, 1436px and up) */
 @media (min-width: 1436px) { 
     #myslider{
-        width: 70% !important;
+        width: 1440px !important;
         margin: 0 auto !important;
     }
-}
-/* Large devices (desktops 4k, 2000px and up) */
-@media (min-width: 2000px) { 
-    #myslider{
-        width: 50% !important;
-    }
-}
+} 
 
 
 
